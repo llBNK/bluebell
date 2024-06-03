@@ -1,0 +1,30 @@
+name: "web_demo"
+mode: "dev"
+port: 8081
+mechineID: 1
+startTime: "2024-05-26"
+
+log:
+  level: "debug"
+  filename: "web_demo.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "abc123"
+  dbname: "insert-mysql-test"
+  max_open_conns: 200
+  max_idle_conns: 50
+
+
+auth:
+  jwt_expire: 1
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+#  db: 0
